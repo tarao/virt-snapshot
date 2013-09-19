@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dom="$1"
+auth-command run "$dom"/apt
+
+# Assume that the command has been prepared as follows.
+#   auth-command add "$dom" "$dom"/apt cron-apt
+# See https://gist.github.com/tarao/4108520 for auth-command.
